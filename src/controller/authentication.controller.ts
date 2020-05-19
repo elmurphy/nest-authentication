@@ -7,20 +7,25 @@ import { AuthenticationService } from "../service/authentication.service";
 
 @Controller("authentication")
 export class AuthenticationController {
-  constructor(private readonly authenticationService: AuthenticationService) {}
+	constructor(private readonly authenticationService: AuthenticationService) {}
 
-  @Post("token")
-  async getToken(userLoginModel: IUserLogin): Promise<string> {
-    return await this.authenticationService.getToken(userLoginModel);
-  }
+	@Post("token")
+	async getToken(userLoginModel: IUserLogin): Promise<string> {
+		return await this.authenticationService.getToken(userLoginModel);
+	}
 
-  @Post("register")
-  async getRegister(userRegisterModel: IUserRegister): Promise<IUserResponse> {
-    return await this.authenticationService.register(userRegisterModel);
-  }
+	@Post("register")
+	async getRegister(userRegisterModel: IUserRegister): Promise<IUserResponse> {
+		return await this.authenticationService.register(userRegisterModel);
+	}
 
-  @Get("profile")
-  async getProfile(): Promise<IUserResponse> {
-    return await this.authenticationService.getMyProfile();
+	@Get("profile")
+	async getProfile(): Promise<IUserResponse> {
+		return await this.authenticationService.getMyProfile();
   }
+  
+	@Get("example")
+	async example(): Promise<string> {
+		return "hello world";
+	}
 }

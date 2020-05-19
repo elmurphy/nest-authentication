@@ -15,7 +15,6 @@ export class AuthenticationModule {
 			module: AuthenticationModule,
 			controllers: [AuthenticationController],
 			providers: [AuthenticationService],
-			exports: [AuthenticationService],
 		};
 	}
 }
