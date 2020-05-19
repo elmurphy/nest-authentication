@@ -1,11 +1,12 @@
 {
 	"name": "nest-authentication",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "",
 	"main": "lib/index.js",
 	"types": "lib",
 	"scripts": {
-		"build": "tsc -p ."
+		"build": "tsc -p .",
+		"pushall": "npm publish && git add -A && git commit -m \"auto publish init\" && git push -u origin master"
 	},
 	"keywords": [],
 	"author": "",

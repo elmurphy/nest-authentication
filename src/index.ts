@@ -5,14 +5,19 @@ import UserSchema from "./model/user/index.model";
 import { ModuleOptions } from "./model/moduleoptions/index.model";
 import { AuthenticationService } from "./service/authentication.service";
 
-// @Module({
-// 	imports: [MongooseModule.forFeature([{ name: "users", schema: UserSchema }])],
-// 	controllers: [AuthenticationController],
-// 	providers: [AuthenticationService],
-// })
-// export class AuthenticationModule {
-// 	// constructor(moduleOptions: ModuleOptions);
-// }
-export declare class AuthenticationModule {
-	static initialize(options?: ModuleOptions): DynamicModule;
+@Module({})
+export class AuthenticationModule {
+	static initialize(options?: ModuleOptions): DynamicModule {
+		return {
+			imports: [
+				MongooseModule.forFeature([{ name: "users", schema: UserSchema }]),
+			],
+			module: AuthenticationModule,
+			controllers: [AuthenticationController],
+			providers: [AuthenticationService],
+			exports: [AuthenticationService],
+		};
+	}
 }
+
+export default AuthenticationModule;
