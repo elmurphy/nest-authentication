@@ -1,0 +1,1 @@
+{"version":3,"file":"login.model.d.ts","sourceRoot":"","sources":["../../../src/model/user/login.model.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,QAAQ,MAAM,UAAU,CAAC;AAkCrC,MAAM,WAAW,UAAW,SAAQ,QAAQ,CAAC,QAAQ;IACpD,KAAK,EAAE,MAAM,CAAC;IACd,QAAQ,EAAE,MAAM,CAAC;CACjB"}

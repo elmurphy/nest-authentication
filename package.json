@@ -1,0 +1,22 @@
+{
+	"name": "nest-authentication",
+	"version": "1.0.0",
+	"description": "",
+	"main": "lib/index.js",
+	"types": "lib",
+	"scripts": {
+		"build": "tsc -p ."
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"typescript": "^3.9.2"
+	},
+	"dependencies": {
+		"@nestjs/common": "^7.0.13",
+		"@nestjs/mongoose": "^7.0.1",
+		"@types/mongoose": "^5.7.20",
+		"mongoose": "^5.9.14"
+	}
+}

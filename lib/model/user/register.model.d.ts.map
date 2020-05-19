@@ -1,0 +1,1 @@
+{"version":3,"file":"register.model.d.ts","sourceRoot":"","sources":["../../../src/model/user/register.model.ts"],"names":[],"mappings":"AAQA,OAAO,KAAK,QAAQ,MAAM,UAAU,CAAC;AAuCrC,MAAM,WAAW,aAAc,SAAQ,QAAQ,CAAC,QAAQ;IACvD,KAAK,EAAE,MAAM,CAAC;IACd,QAAQ,EAAE,MAAM,CAAC;IACjB,SAAS,EAAE,MAAM,CAAC;CAClB"}
